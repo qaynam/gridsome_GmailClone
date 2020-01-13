@@ -20,7 +20,7 @@
         </div>
         <div class="center w-4/6">
           <div class="max-w-3xl h-full relative rounded-lg bg-gray-200">
-            <div class="left seach p-1 absolute hover:bg-gray-300 rounded-full">
+            <div class="left search p-1 absolute hover:bg-gray-300 rounded-full">
               <svg
                 focusable="false"
                 height="30"
@@ -36,7 +36,7 @@
               </svg>
             </div>
             <div class="center w-full h-full mx-16">
-              <input type="text" class="h-full w-full bg-transparent outline-none border-none" />
+              <input type="text" class="h-full w-full bg-transparent outline-none border-none" placeholder="メール検索"/>
             </div>
             <div
               class="right absolute hover:bg-gray-200 rounded-full hover:bg-gray-300 rounded-full"
@@ -87,7 +87,7 @@
     </div>
     <section class="flex">
       <div class="left w-1/6">
-        <div class="add-new-btn-wrapper my-5 pl-2">
+        <div class="add-new-btn-wrapper my-4 pl-2">
           <div class="content inline-block">
             <div
               class="inline-block flex items-center rounded-full pl-3 py-3 shadow border hover:bg-gray-100 hover:shadow-lg"
@@ -99,106 +99,223 @@
             </div>
           </div>
         </div>
-        <div class="control-panel-list-wrap px-8">
-          <div class="list-item py-2 my-1 hover:bg-gray-200 flex items-center">
-            <div class="list-icon mr-5 inline-block">
-              <svg
-                fill="gray"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"
-                />
-                <path fill="none" d="M0 0h24v24H0V0z" />
-              </svg>
+        <div class="control-panel-list-wrap h-86 overflow-y-auto">
+          <!-- <div class="overflow-auto"> -->
+            <div class="lite-item-wrapper mr-2 rounded-r-full bg-red-200">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="#d93025"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"
+                    />
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-red-600 font-bold">受信トレイ</div>
+              </div>
             </div>
-            <div class="list-statu inline-block text-black font-bold">受信トレイ</div>
-          </div>
-          <div class="list-item py-2 my-1 hover:bg-gray-200 flex items-center">
-            <div class="list-icon mr-5 inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="gray"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                />
-                <path d="M0 0h24v24H0z" fill="none" />
-              </svg>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="gray"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">スター付き</div>
+              </div>
             </div>
-            <div class="list-statu inline-block text-black font-bold">受信トレイ</div>
-          </div>
-          <div class="list-item py-2 my-1 hover:bg-gray-200 flex items-center">
-            <div class="list-icon mr-5 inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="gray"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                />
-                <path d="M0 0h24v24H0z" fill="none" />
-              </svg>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <defs>
+                      <path id="a" d="M0 0h24v24H0V0z" />
+                    </defs>
+                    <clipPath id="b">
+                      <use xlink:href="#a" overflow="visible" />
+                    </clipPath>
+                    <path
+                      clip-path="url(#b)"
+                      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">スヌーズ中</div>
+              </div>
             </div>
-            <div class="list-statu inline-block text-black font-bold">受信トレイ</div>
-          </div>
-          <div class="list-item py-2 my-1 hover:bg-gray-200 flex items-center">
-            <div class="list-icon mr-5 inline-block">
-              <svg
-                fill="gray"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                  d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"
-                />
-              </svg>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                 <svg fill="gray" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M3.5 18.99l11 .01c.67 0 1.27-.33 1.63-.84L20.5 12l-4.37-6.16c-.36-.51-.96-.84-1.63-.84l-11 .01L8.34 12 3.5 18.99z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">重要</div>
+              </div>
             </div>
-            <div class="list-statu inline-block text-black font-bold">受信トレイ</div>
-          </div>
-          <div class="list-item py-2 my-1 hover:bg-gray-200 flex items-center">
-            <div class="list-icon mr-5 inline-block">
-              <svg
-                fill="gray"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                  d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
-                />
-              </svg>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">送信済み</div>
+              </div>
             </div>
-            <div class="list-statu inline-block text-black font-bold">受信トレイ</div>
-          </div>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">下書き</div>
+              </div>
+            </div>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">下書き</div>
+              </div>
+            </div>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">下書き</div>
+              </div>
+            </div>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">下書き</div>
+              </div>
+            </div>
+            <div class="lite-item-wrapper mr-2 rounded-r-full hover:bg-gray-300 cursor-pointer">
+              <div class="list-item py-2 px-8 my-1 bg-transparent flex items-center">
+                <div class="list-icon mr-5 inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6zm7 6V3.5L18.5 9H14c-.55 0-1-.45-1-1z"
+                    />
+                  </svg>
+                </div>
+                <div class="list-statu inline-block text-black font-bold">下書き</div>
+              </div>
+            </div>
+          <!-- </div> -->
         </div>
       </div>
-      <div class="right w-1/6">ss</div>
+      <main-area class="w-5/6" />
+
     </section>
   </div>
 </template>
 
 <script>
-export default {};
+import MainArea from '~/components/MainArea.vue';
+
+export default {
+  components:{
+    MainArea
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+.h-86{
+  height:28rem;
+}
 #gmail {
   height: 100%;
   width: 100%;
