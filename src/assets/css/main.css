@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 body,html ,#app{
-    height: 100%;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-}
-#app{
-    overflow-y: hidden;
+    height: 24vh;
+    width: 100vw;
+    /* padding: 0%;
+    margin: 0%; */
 }

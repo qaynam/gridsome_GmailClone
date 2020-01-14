@@ -1,5 +1,5 @@
 <template>
-  <div id="main-area" class="flex items-stretch">
+  <div id="main-area" class="flex">
     <div class="left w-full min-h-full">
       <div class="nav flex items-stretch py-4 px-6 border-b">
         <div class="left flex items-center justify-start w-1/2">
@@ -126,7 +126,10 @@
       </div>
       <div class="change-content-nav pl-3 flex">
         <div @click="main = 1" class="w-1/5 px-3 py-2 hover:bg-gray-200 cursor-pointer">
-          <div :class="{'border-red-600' : active1 }" class=" flex border-b-4 py-3 items-center rounded-sm">
+          <div
+            :class="{'border-red-600' : active1 }"
+            class="flex border-b-4 py-3 items-center rounded-sm"
+          >
             <div class="icons inline-block mr-5">
               <svg
                 :fill="fill1"
@@ -141,11 +144,17 @@
                 <path fill="none" d="M0 0h24v24H0V0z" />
               </svg>
             </div>
-            <div :class="{'text-red-500' : active1 , 'text-gray-600' : !active1 }" class=" inline align-middle">メイン</div>
+            <div
+              :class="{'text-red-500' : active1 , 'text-gray-600' : !active1 }"
+              class="inline align-middle"
+            >メイン</div>
           </div>
         </div>
         <div @click="main = 2" class="w-1/5 px-3 py-2 hover:bg-gray-200 cursor-pointer">
-          <div :class="{'border-blue-600' : active2 }" class="border-b-4 flex py-3 items-center rounded-sm">
+          <div
+            :class="{'border-blue-600' : active2 }"
+            class="border-b-4 flex py-3 items-center rounded-sm"
+          >
             <div class="icons inline-block mr-5">
               <svg
                 :fill="fill2"
@@ -160,11 +169,17 @@
                 />
               </svg>
             </div>
-            <div :class="{'text-blue-50' : active1 , 'text-gray-600' : !active1 }" class="inline align-middle">ソーシャル</div>
+            <div
+              :class="{'text-blue-50' : active1 , 'text-gray-600' : !active1 }"
+              class="inline align-middle"
+            >ソーシャル</div>
           </div>
         </div>
         <div @click="main = 3 " class="w-1/5 px-3 py-2 hover:bg-gray-200 cursor-pointer">
-          <div :class="{'border-green-600' : active3 }" class="border-b-4 flex py-3 items-center rounded-sm">
+          <div
+            :class="{'border-green-600' : active3 }"
+            class="border-b-4 flex py-3 items-center rounded-sm"
+          >
             <div class="icons inline-block mr-5">
               <svg
                 :fill="fill3"
@@ -179,52 +194,57 @@
                 />
               </svg>
             </div>
-            <div :class="{'text-green-50' : active1 , 'text-gray-600' : !active1 }" class="0 inline align-middle">プロモーション</div>
+            <div
+              :class="{'text-green-50' : active1 , 'text-gray-600' : !active1 }"
+              class="0 inline align-middle"
+            >プロモーション</div>
           </div>
         </div>
       </div>
       <div class="content">
-        <div v-if="main == 1" class="hover:shadow-md border-b mt-2">
-          <div class="px-6 flex">
-            <div class="icons w-1/12">
-              <div class="check-icon inline-block">
-                <svg
-                  fill="gray"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  />
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
+        <div v-if="main == 1" class="mail-lists">
+          <div class="wrapper hover:shadow-md border-b mt-2">
+            <div class="px-6 flex ">
+              <div class="icons w-1/12">
+                <div class="check-icon inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <div class="star-icon inline-block">
+                  <svg
+                    fill="gray"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                    />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
               </div>
-              <div class="star-icon inline-block">
-                <svg
-                  fill="gray"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
-                  />
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
+              <div class="main-title w-2/12">
+                <h1 class="font-bold">some random width</h1>
               </div>
-            </div>
-            <div class="main-title w-2/12">
-              <h1 class="font-bold">some random width</h1>
-            </div>
-            <div class="main-sub w-8/12 h-8 overflow-hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing ...
-            </div>
-            <div class="date w-1/12 text-right">
-              <p class="font-bold text-sm">2020-1-13</p>
+              <div class="main-sub w-8/12 h-8 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing ...
+              </div>
+              <div class="date w-1/12 text-right">
+                <p class="font-bold text-sm">2020-1-13</p>
+              </div>
             </div>
           </div>
         </div>
@@ -245,15 +265,26 @@
             <div class="max-w-4xl max-auto">
               <div class="text-xl mb-5">[プロモーション] タブは空です</div>
               <p class="mb-5">セール、クーポン、その他のマーケティング メールは、ここに表示されます。</p>
-              <p class="mb-5">
-                タブを追加、削除するには、受信トレイを設定をクリックします
-              </p>
+              <p class="mb-5">タブを追加、削除するには、受信トレイを設定をクリックします</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer flex px-6">
+          <div class="w-1/3 text-gray-600 text-xs text-left">
+            0 GB（0%） / 15 GB を使用中 <br>
+            管理
+          </div>
+          <div class="w-1/3 text-gray-600 text-xs text-center">
+            利用規約 · プライバシー · プログラム ポリシー
+          </div>
+          <div class="w-1/3 text-gray-600 text-xs text-right">
+            前回のアカウント アクティビティ: 2 時間前<br>
+            詳細
+          </div>
+      </div>
     </div>
-    <div class="right w-16 border-l px-5 pt-3">
+    <div class="right w-16 border-l h-full px-5 pt-3">
       <div class="icons mb-10">
         <g-image class="mb-8" src="~/assets/img/calendar.png" alt="calendar" />
         <g-image class="mb-8" src="~/assets/img/keep.png" alt="calendar" />
@@ -275,48 +306,55 @@ export default {
   data() {
     return {
       main: 1,
-      fill1:'gray',
-      fill2:'gray',
-      fill3:'gray',
-      active1:true,
-      active2:false,
-      active3:false,
+      fill1: "gray",
+      fill2: "gray",
+      fill3: "gray",
+      active1: true,
+      active2: false,
+      active3: false
     };
   },
-  watch:{
-      main:function(val){
-          if(val == 1){
-              this.active2 = false;
-              this.active3 = false;
-              this.active1 = true;
+  watch: {
+    main: function(val) {
+      if (val == 1) {
+        this.active2 = false;
+        this.active3 = false;
+        this.active1 = true;
 
-              this.fill2 = "gray";
-              this.fill3 = "gray";
-              this.fill1 = '#d93025'
-
-          }
-          if(val == 2){
-              this.active3 = false;
-              this.active1 = false;
-              this.active2 = true;
-
-              this.fill1 = 'gray'
-              this.fill3 = "gray";
-              this.fill2 = '#3182ce';
-          }
-          if(val == 3){
-              this.active2 = false;
-              this.active1 = false;
-              this.active3 = true;
-
-              this.fill2 = 'gray';
-              this.fill1 = 'gray'
-              this.fill3 = 'green';
-          }
+        this.fill2 = "gray";
+        this.fill3 = "gray";
+        this.fill1 = "#d93025";
       }
+      if (val == 2) {
+        this.active3 = false;
+        this.active1 = false;
+        this.active2 = true;
+
+        this.fill1 = "gray";
+        this.fill3 = "gray";
+        this.fill2 = "#3182ce";
+      }
+      if (val == 3) {
+        this.active2 = false;
+        this.active1 = false;
+        this.active3 = true;
+
+        this.fill2 = "gray";
+        this.fill1 = "gray";
+        this.fill3 = "green";
+      }
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+.content{
+    min-height: 400px;
+}
+#main-area{
+    .right{
+        // height: 24vh;
+    }
+}
 </style>
