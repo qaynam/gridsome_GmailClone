@@ -352,9 +352,4 @@ export default {
 .content{
     min-height: 400px;
 }
-#main-area{
-    .right{
-        // height: 24vh;
-    }
-}
 </style>
