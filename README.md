@@ -11,9 +11,8 @@ Demo site https://vigorous-easley-20807a.netlify.com/
 
 `npm install --global @gridsome/cli`
 
-### 2. Create a Gridsome project
+### 2. Install packages
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. `npm install` to install packages
+2. `gridsome develop` to start a local dev server at `http://localhost:8080`
+3. Happy coding 🎉🙌
